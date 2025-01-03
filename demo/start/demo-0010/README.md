@@ -19,3 +19,5 @@ qemu -boot d -cdrom tmp/new.iso
 ``` sh
 qemu-system-x86_64 -boot d -cdrom tmp/new.iso
 ```
+
+Keybind: `Ctrl + Alt + g` to let mouse leave qemu
