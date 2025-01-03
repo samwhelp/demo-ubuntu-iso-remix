@@ -6,6 +6,9 @@
 
 mod_iso_archive () {
 
+	echo 'TODO'
+
+	return 0
 
 	local iso_file_name="${REF_ISO_FILE_NAME}"
 	local new_iso_file_name="new.${iso_file_name}"
