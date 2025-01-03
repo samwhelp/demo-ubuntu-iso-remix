@@ -19,7 +19,10 @@ mod_iso_archive () {
 
 	sed -i 's|iso/|./|g' iso/md5sum.txt
 
-	xorriso -as mkisofs -r -V "${new_iso_label_name}" -o "${new_iso_file_name}" -J -l -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -eltorito-alt-boot -e boot/grub/efi.img -no-emul-boot -isohybrid-gpt-basdat -isohybrid-apm-hfsplus -isohybrid-mbr /usr/lib/syslinux/bios/isohdpfx.bin iso/boot iso
+	#xorriso -as mkisofs -r -V "${new_iso_label_name}" -o "${new_iso_file_name}" -J -l -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -eltorito-alt-boot -e boot/grub/efi.img -no-emul-boot -isohybrid-gpt-basdat -isohybrid-apm-hfsplus -isohybrid-mbr /usr/lib/syslinux/bios/isohdpfx.bin iso/boot iso
+
+	
+	grub-mkrescue -o new.iso ./iso
 
 
 	cd "${OLDPWD}"
