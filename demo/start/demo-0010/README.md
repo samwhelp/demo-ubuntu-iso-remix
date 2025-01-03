@@ -15,3 +15,7 @@ sudo apt-get install qemu-system-x86
 ``` sh
 qemu -boot d -cdrom tmp/new.iso
 ```
+
+``` sh
+qemu-system-x86_64 -boot d -cdrom tmp/new.iso
+```
