@@ -86,6 +86,12 @@ umount -lf /proc
 exit
 ```
 
+> create ./iso/casper/filesystem.manifest
+
+``` sh
+sudo chroot squashfs-root dpkg-query -W --showformat='${Package} ${Version}\n' > ./iso/casper/filesystem.manifest
+```
+
 > umount
 
 ``` sh
