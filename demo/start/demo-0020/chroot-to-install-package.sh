@@ -19,7 +19,7 @@ mod_chroot_to_install_pacakage () {
 
 	sudo chroot ${squashfs_dir_name} apt-get update
 
-	sudo chroot ${squashfs_dir_name} apt-get install ${package_list_install}
+	sudo chroot ${squashfs_dir_name} apt-get -y install ${package_list_install}
 
 
 	cd "${OLDPWD}"
