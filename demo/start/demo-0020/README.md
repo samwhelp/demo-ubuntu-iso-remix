@@ -9,7 +9,16 @@
 * [live-custom-ubuntu-from-scratch](https://github.com/mvallim/live-custom-ubuntu-from-scratch)
 
 
+## Usage
 
+``` sh
+make main-steps
+```
+
+
+
+
+## Tips
 
 ## chroot
 
