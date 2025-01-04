@@ -11,6 +11,8 @@ mod_chroot_session () {
 
 	./chroot-pre.sh
 
+	./chroot-to.sh
+
 	./chroot-clean.sh
 
 	./chroot-post.sh
