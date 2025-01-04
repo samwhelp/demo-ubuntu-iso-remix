@@ -7,6 +7,8 @@
 mod_qemu_load_new () {
 
 
+	local tmp_dir_path="${REF_TMP_DIR_PATH}"
+
 	local iso_file_name="${REF_ISO_FILE_NAME}"
 
 

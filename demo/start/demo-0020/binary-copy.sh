@@ -7,10 +7,13 @@
 mod_binary_copy () {
 
 
+	local tmp_dir_path="${REF_TMP_DIR_PATH}"
+
 	local squashfs_file_name="${REF_SQUASHFS_FILE_NAME}"
 
 
-	cd ./tmp
+	cd "${tmp_dir_path}"
+
 
 	rm -f ./${squashfs_file_name}
 

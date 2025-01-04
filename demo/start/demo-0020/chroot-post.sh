@@ -7,10 +7,12 @@
 mod_chroot_post () {
 
 
+	local tmp_dir_path="${REF_TMP_DIR_PATH}"
+
 	local squashfs_dir_name="${REF_SQUASHFS_DIR_NAME}"
 
 
-	cd ./tmp
+	cd "${tmp_dir_path}"
 
 
 	##
