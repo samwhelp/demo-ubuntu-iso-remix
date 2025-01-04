@@ -10,12 +10,15 @@ mod_iso_archive () {
 
 	#return 0
 
+
+	local tmp_dir_path="${REF_TMP_DIR_PATH}"
+
 	local iso_file_name="${REF_ISO_FILE_NAME}"
 	local new_iso_file_name="new.${iso_file_name}"
 	local new_iso_label_name="Ubuntu custom amd64"
 
 
-	cd ./tmp
+	cd "${tmp_dir_path}"
 
 
 	md5sum iso/.disk/info > iso/md5sum.txt

@@ -13,7 +13,7 @@ mod_qemu_load_new () {
 	local new_iso_file_name="new.${iso_file_name}"
 
 
-	cd ./tmp
+	cd "${tmp_dir_path}"
 
 
 	#qemu-system-x86_64 -boot d -cdrom "${new_iso_file_name}"

@@ -1,4 +1,10 @@
 
+
+#REF_TMP_DIR_PATH="/tmp"
+#REF_TMP_DIR_PATH="${HOME}/tmp"
+REF_TMP_DIR_PATH="./tmp"
+
+
 REF_ISO_FILE_NAME="ubuntu-20.04.6-live-server-amd64.iso"
 REF_ISO_URL="https://releases.ubuntu.com/20.04/${REF_ISO_FILE_NAME}"
 

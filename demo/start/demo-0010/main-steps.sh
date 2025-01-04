@@ -18,9 +18,7 @@ mod_main_steps () {
 	./binary-extract.sh
 
 
-	##
-	## ## TODO: chroot
-	##
+	./chroot-session.sh
 
 
 	./binary-archive.sh
