@@ -4,7 +4,7 @@
 . ./config.sh
 
 
-mod_chroot_to () {
+mod_chroot_do () {
 
 
 	./chroot-to-install-package.sh
@@ -13,4 +13,4 @@ mod_chroot_to () {
 }
 
 
-mod_chroot_to
+mod_chroot_do
