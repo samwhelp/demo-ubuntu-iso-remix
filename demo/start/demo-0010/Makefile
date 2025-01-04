@@ -26,6 +26,13 @@ help:
 	@echo
 	@echo '	$$ make iso-archive'
 	@echo
+	@echo
+	@echo '	$$ make qemu-prepare'
+	@echo
+	@echo '	$$ make qemu-load-old'
+	@echo
+	@echo '	$$ make qemu-load-new'
+	@echo
 .PHONY: help
 
 
@@ -81,9 +88,26 @@ iso-archive:
 
 
 
-build:
-	@./build.sh
-.PHONY: build
+qemu-prepare:
+	@./qemu-prepare.sh
+.PHONY: qemu-prepare
+
+
+qemu-load-old:
+	@./qemu-load-old.sh
+.PHONY: qemu-load-old
+
+
+qemu-load-new:
+	@./qemu-load-new.sh
+.PHONY: qemu-load-new
+
+
+
+
+steps:
+	@./steps.sh
+.PHONY: steps
 
 
 
