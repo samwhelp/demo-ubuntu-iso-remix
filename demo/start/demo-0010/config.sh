@@ -8,4 +8,4 @@ REF_SQUASHFS_FILE_NAME="ubuntu-server-minimal.squashfs"
 REF_SQUASHFS_DIR_NAME="squashfs-root"
 
 
-REF_PACKAGE_LIST_INSTALL="xorriso squashfs-tools fakeroot"
+REF_PACKAGE_LIST_INSTALL="xorriso squashfs-tools fakeroot isolinux syslinux syslinux-efi"
