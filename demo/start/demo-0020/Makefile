@@ -27,6 +27,15 @@ help:
 	@echo '	$$ make iso-archive'
 	@echo
 	@echo
+	@echo
+	@echo
+	@echo '	$$ make chroot-pre'
+	@echo
+	@echo '	$$ make chroot-post'
+	@echo
+	@echo
+	@echo
+	@echo
 	@echo '	$$ make qemu-prepare'
 	@echo
 	@echo '	$$ make qemu-load-old'
@@ -84,6 +93,18 @@ binary-renew:
 iso-archive:
 	@./iso-archive.sh
 .PHONY: iso-archive
+
+
+
+
+chroot-pre:
+	@./chroot-pre.sh
+.PHONY: chroot-pre
+
+
+chroot-post:
+	@./chroot-post.sh
+.PHONY: chroot-post
 
 
 
