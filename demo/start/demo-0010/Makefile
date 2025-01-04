@@ -105,9 +105,9 @@ qemu-load-new:
 
 
 
-steps:
-	@./steps.sh
-.PHONY: steps
+main-steps:
+	@./main-steps.sh
+.PHONY: main-steps
 
 
 
