@@ -29,6 +29,8 @@ help:
 	@echo
 	@echo
 	@echo
+	@echo '	$$ make chroot-resolve'
+	@echo
 	@echo '	$$ make chroot-pre'
 	@echo
 	@echo '	$$ make chroot-post'
@@ -95,6 +97,11 @@ iso-archive:
 .PHONY: iso-archive
 
 
+
+
+chroot-resolve:
+	@./chroot-resolve.sh
+.PHONY: chroot-resolve
 
 
 chroot-pre:
