@@ -17,6 +17,8 @@ mod_chroot_to_install_pacakage () {
 	cd "${tmp_dir_path}"
 
 
+	sudo chroot ${squashfs_dir_name} apt-get update
+
 	sudo chroot ${squashfs_dir_name} apt-get install ${package_list_install}
 
 
