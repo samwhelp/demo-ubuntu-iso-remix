@@ -4,7 +4,7 @@
 . ./config.sh
 
 
-mod_chroot_post () {
+mod_chroot_unmount () {
 
 
 	local tmp_dir_path="${REF_TMP_DIR_PATH}"
@@ -33,4 +33,4 @@ mod_chroot_post () {
 }
 
 
-mod_chroot_post
+mod_chroot_unmount

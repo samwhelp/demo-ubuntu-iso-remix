@@ -33,13 +33,13 @@ help:
 	@echo
 	@echo '	$$ make chroot-resolve'
 	@echo
-	@echo '	$$ make chroot-pre'
+	@echo '	$$ make chroot-mount'
 	@echo
 	@echo '	$$ make chroot-do'
 	@echo
 	@echo '	$$ make chroot-clean'
 	@echo
-	@echo '	$$ make chroot-post'
+	@echo '	$$ make chroot-umount'
 	@echo
 	@echo
 	@echo
@@ -115,9 +115,9 @@ chroot-resolve:
 .PHONY: chroot-resolve
 
 
-chroot-pre:
-	@./chroot-pre.sh
-.PHONY: chroot-pre
+chroot-mount:
+	@./chroot-mount.sh
+.PHONY: chroot-mount
 
 
 chroot-do:
@@ -130,9 +130,9 @@ chroot-clean:
 .PHONY: chroot-clean
 
 
-chroot-post:
-	@./chroot-post.sh
-.PHONY: chroot-post
+chroot-unmount:
+	@./chroot-unmount.sh
+.PHONY: chroot-unmount
 
 
 

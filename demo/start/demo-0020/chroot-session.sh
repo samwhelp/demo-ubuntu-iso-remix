@@ -9,13 +9,13 @@ mod_chroot_session () {
 
 	./chroot-resolve.sh
 
-	./chroot-pre.sh
+	./chroot-mount.sh
 
 	./chroot-do.sh
 
 	./chroot-clean.sh
 
-	./chroot-post.sh
+	./chroot-unmount.sh
 
 
 }
