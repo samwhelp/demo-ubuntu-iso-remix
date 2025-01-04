@@ -10,6 +10,7 @@ mod_binary_extract () {
 	local squashfs_file_name="${REF_SQUASHFS_FILE_NAME}"
 	local squashfs_dir_name="${REF_SQUASHFS_DIR_NAME}"
 
+
 	cd ./tmp
 
 
