@@ -12,9 +12,11 @@ help:
 	@echo
 	@echo '	$$ make prepare'
 	@echo
+	@echo
 	@echo '	$$ make iso-download'
 	@echo
 	@echo '	$$ make iso-extract'
+	@echo
 	@echo
 	@echo '	$$ make binary-copy'
 	@echo
@@ -24,7 +26,11 @@ help:
 	@echo
 	@echo '	$$ make binary-renew'
 	@echo
+	@echo
 	@echo '	$$ make iso-archive'
+	@echo
+	@echo
+	@echo '	$$ make chroot-session'
 	@echo
 	@echo
 	@echo '	$$ make qemu-prepare'
@@ -84,6 +90,13 @@ binary-renew:
 iso-archive:
 	@./iso-archive.sh
 .PHONY: iso-archive
+
+
+
+
+chroot-session:
+	@./chroot-session.sh
+.PHONY: chroot-session
 
 
 
