@@ -6,6 +6,10 @@
 * [Custom Ubuntu ISO](http://amitmason.blogspot.com/2011/04/ubuntu.html)
 * [iso-build](https://samwhelp.github.io/note-about-lika-live-build-config/read/issue/iso-build.html#explore)
 * [/usr/lib/live/build/binary_iso](https://salsa.debian.org/live-team/live-build/-/blob/master/scripts/build/binary_iso?ref_type=heads#L189-L192)
+* [live-custom-ubuntu-from-scratch](https://github.com/mvallim/live-custom-ubuntu-from-scratch)
+
+
+
 
 ## chroot
 
