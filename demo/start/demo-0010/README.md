@@ -42,6 +42,13 @@ mount -t sysfs none /sys
 mount -t devpts none /dev/pts
 ```
 
+then try network
+
+``` sh
+ping www.google.com
+```
+
+
 
 
 ## qemu
