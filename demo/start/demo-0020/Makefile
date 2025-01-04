@@ -29,6 +29,8 @@ help:
 	@echo
 	@echo
 	@echo
+	@echo '	$$ make chroot-session'
+	@echo
 	@echo '	$$ make chroot-resolve'
 	@echo
 	@echo '	$$ make chroot-pre'
@@ -99,6 +101,11 @@ iso-archive:
 .PHONY: iso-archive
 
 
+
+
+chroot-session:
+	@./chroot-session.sh
+.PHONY: chroot-session
 
 
 chroot-resolve:
