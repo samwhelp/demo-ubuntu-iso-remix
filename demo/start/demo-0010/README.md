@@ -42,10 +42,54 @@ mount -t sysfs none /sys
 mount -t devpts none /dev/pts
 ```
 
-then try network
+> then try network
 
 ``` sh
 ping www.google.com
+```
+
+> run 
+
+``` sh
+sudo apt-get update
+```
+
+> run to install extra package
+
+``` sh
+sudo apt-get install nano vim micro
+```
+
+> clean
+
+``` sh
+rm -f /etc/hosts
+rm -f /etc/resolv.conf
+rm -f /root/.bash_history
+rm -f /tmp/*
+rm -f /var/tmp/*
+
+apt-get clean
+```
+
+> umount
+
+``` sh
+umount /dev/pts
+umount /sys
+umount -lf /proc
+```
+
+> exit chroot
+
+``` sh
+exit
+```
+
+> umount
+
+``` sh
+sudo umount -lf squashfs-root/dev
 ```
 
 
