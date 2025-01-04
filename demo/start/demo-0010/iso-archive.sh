@@ -6,9 +6,9 @@
 
 mod_iso_archive () {
 
-	echo 'TODO'
+	#echo 'TODO'
 
-	return 0
+	#return 0
 
 	local iso_file_name="${REF_ISO_FILE_NAME}"
 	local new_iso_file_name="new.${iso_file_name}"
@@ -24,8 +24,10 @@ mod_iso_archive () {
 
 	#xorriso -as mkisofs -r -V "${new_iso_label_name}" -o "${new_iso_file_name}" -J -l -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -eltorito-alt-boot -e boot/grub/efi.img -no-emul-boot -isohybrid-gpt-basdat -isohybrid-apm-hfsplus -isohybrid-mbr /usr/lib/syslinux/bios/isohdpfx.bin iso/boot iso
 
+	xorriso -as mkisofs -r -V "${new_iso_label_name}" -o "${new_iso_file_name}" -J -l -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -eltorito-alt-boot -e boot/grub/efi.img -no-emul-boot -isohybrid-gpt-basdat -isohybrid-apm-hfsplus -isohybrid-mbr /usr/lib/ISOLINUX/isohdpfx.bin iso/boot iso
+
 	
-	grub-mkrescue -o new.iso ./iso
+	#grub-mkrescue -o new.iso ./iso
 
 
 	cd "${OLDPWD}"
