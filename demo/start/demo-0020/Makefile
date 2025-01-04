@@ -33,6 +33,8 @@ help:
 	@echo
 	@echo '	$$ make chroot-pre'
 	@echo
+	@echo '	$$ make chroot-clean'
+	@echo
 	@echo '	$$ make chroot-post'
 	@echo
 	@echo
@@ -107,6 +109,11 @@ chroot-resolve:
 chroot-pre:
 	@./chroot-pre.sh
 .PHONY: chroot-pre
+
+
+chroot-clean:
+	@./chroot-clean.sh
+.PHONY: chroot-clean
 
 
 chroot-post:
