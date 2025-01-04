@@ -7,6 +7,42 @@
 * [iso-build](https://samwhelp.github.io/note-about-lika-live-build-config/read/issue/iso-build.html#explore)
 * [/usr/lib/live/build/binary_iso](https://salsa.debian.org/live-team/live-build/-/blob/master/scripts/build/binary_iso?ref_type=heads#L189-L192)
 
+## chroot
+
+> cd ./tmp dir
+
+``` sh
+cd ./tmp
+```
+
+> cp /etc/host and /etc/resolv.conf
+
+```
+sudo cp /etc/hosts squashfs-root/etc
+sudo cp /etc/resolv.conf squashfs-root/etc
+```
+
+> bind
+
+``` sh
+sudo mount --bind /dev squashfs-root/dev
+```
+
+> chroot
+
+``` sh
+sudo chroot squashfs-root
+```
+
+> in chroot, bind extra
+
+``` sh
+mount -t proc none /proc
+mount -t sysfs none /sys
+mount -t devpts none /dev/pts
+```
+
+
 
 ## qemu
 
