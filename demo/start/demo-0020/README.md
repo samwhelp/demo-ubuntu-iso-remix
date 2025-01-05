@@ -7,6 +7,18 @@
 * [iso-build](https://samwhelp.github.io/note-about-lika-live-build-config/read/issue/iso-build.html#explore)
 * [/usr/lib/live/build/binary_iso](https://salsa.debian.org/live-team/live-build/-/blob/master/scripts/build/binary_iso?ref_type=heads#L189-L192)
 * [live-custom-ubuntu-from-scratch](https://github.com/mvallim/live-custom-ubuntu-from-scratch)
+* Nitrux / iso-tool / [iso-tool](https://github.com/Nitrux/iso-tool/blob/legacy/iso-tool#L163-L179)
+* Nitrux / tools / [mkiso](https://github.com/Nitrux/tools/blob/master/mkiso#L143-L154)
+
+
+
+
+## Wiki
+
+* [IMG (file format)](https://en.wikipedia.org/wiki/IMG_(file_format))
+* [IMG格式](https://zh.wikipedia.org/zh-tw/IMG%E6%A0%BC%E5%BC%8F)
+
+
 
 
 ## Usage
