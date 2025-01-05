@@ -4,7 +4,7 @@
 . ./config.sh
 
 
-mod_binary_extract () {
+mod_img_extract () {
 
 
 	local tmp_dir_path="${REF_TMP_DIR_PATH}"
@@ -27,4 +27,4 @@ mod_binary_extract () {
 }
 
 
-mod_binary_extract
+mod_img_extract

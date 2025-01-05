@@ -14,15 +14,15 @@ mod_main_steps () {
 	./iso-extract.sh
 
 
-	./binary-copy.sh
-	./binary-extract.sh
+	./img-copy.sh
+	./img-extract.sh
 
 
 	./chroot-session.sh
 
 
-	./binary-archive.sh
-	./binary-renew.sh
+	./img-archive.sh
+	./img-renew.sh
 
 
 	./iso-archive.sh

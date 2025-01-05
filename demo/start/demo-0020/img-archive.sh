@@ -4,7 +4,7 @@
 . ./config.sh
 
 
-mod_binary_renew () {
+mod_img_archive () {
 
 
 	local tmp_dir_path="${REF_TMP_DIR_PATH}"
@@ -18,9 +18,7 @@ mod_binary_renew () {
 	cd "${tmp_dir_path}"
 
 
-	rm ./iso/casper/${squashfs_file_name}
-
-	cp ${new_squashfs_file_name} ./iso/casper/${squashfs_file_name}
+	sudo mksquashfs ${squashfs_dir_name}/ ${new_squashfs_file_name} -comp xz -b 1M -noappend
 
 
 	cd "${OLDPWD}"
@@ -29,4 +27,4 @@ mod_binary_renew () {
 }
 
 
-mod_binary_renew
+mod_img_archive

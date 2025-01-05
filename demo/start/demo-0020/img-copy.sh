@@ -4,7 +4,7 @@
 . ./config.sh
 
 
-mod_binary_copy () {
+mod_img_copy () {
 
 
 	local tmp_dir_path="${REF_TMP_DIR_PATH}"
@@ -26,4 +26,4 @@ mod_binary_copy () {
 }
 
 
-mod_binary_copy
+mod_img_copy

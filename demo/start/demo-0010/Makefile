@@ -18,13 +18,13 @@ help:
 	@echo '	$$ make iso-extract'
 	@echo
 	@echo
-	@echo '	$$ make binary-copy'
+	@echo '	$$ make img-copy'
 	@echo
-	@echo '	$$ make binary-extract'
+	@echo '	$$ make img-extract'
 	@echo
-	@echo '	$$ make binary-archive'
+	@echo '	$$ make img-archive'
 	@echo
-	@echo '	$$ make binary-renew'
+	@echo '	$$ make img-renew'
 	@echo
 	@echo
 	@echo '	$$ make iso-archive'
@@ -65,24 +65,24 @@ iso-extract:
 
 
 
-binary-copy:
-	@./binary-copy.sh
-.PHONY: binary-copy
+img-copy:
+	@./img-copy.sh
+.PHONY: img-copy
 
 
-binary-extract:
-	@./binary-extract.sh
-.PHONY: binary-extract
+img-extract:
+	@./img-extract.sh
+.PHONY: img-extract
 
 
-binary-archive:
-	@./binary-archive.sh
-.PHONY: binary-archive
+img-archive:
+	@./img-archive.sh
+.PHONY: img-archive
 
 
-binary-renew:
-	@./binary-renew.sh
-.PHONY: binary-renew
+img-renew:
+	@./img-renew.sh
+.PHONY: img-renew
 
 
 
